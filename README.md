@@ -11,8 +11,8 @@ Algunas de las modificaciones sobre el proyecto mini original son:<br/>
 4 - La clase View-Old también ha sido suprimida ya que únicamente incluía una clase obsoleta<br/>
 5 - Está adaptada hasta la última clase de MVC<br/>
 <br/>
-Para generar la máquina, seguir estos pasos:<br/>
-(Los pasos 0 y 3 son omitibles si ya tienes vagrant instalado y la box Trusty64 instalada, puedes consultar tus box instaladas con el comando "vagrant box list")<br/>
+<b>Para generar la máquina, seguir estos pasos:</b><br/>
+<i>Los pasos 0 y 3 son omitibles si ya tienes vagrant instalado y la box Trusty64 instalada, puedes consultar tus box instaladas con el comando "vagrant box list"</i><br/>
 0 - Instalar Vagrant<br/>
 1 - Descargar los archivos "Vagrantfile" y "Boostrap" que se encuentran en la carpeta _vagrant<br/>
 2 - Mover ambos archivos a la carpeta donde queréis crear la máquina<br/>
