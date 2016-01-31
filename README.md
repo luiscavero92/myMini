@@ -15,10 +15,10 @@ Los archivos "Vagrantfile" y "Boostrap" están traducidos (en la medida de lo po
 fácilmente personalizables, algunas características importantes son:<br/>
 <br/>
 Vagrantfile<br/>
- * -  Box a utilizar<br/>
+ 1 -  Box a utilizar<br/>
 <br/>
 Boostrap<br/>
-- Contraseña de la base de datos<br/>
-- Archivo .sql con la base de datos<br/>
-- Repositorio Git a clonar (podéis poner los repositorios mini originales, pero perdereis Composer y sus paquetes)<br/>
+1 - Contraseña de la base de datos<br/>
+2 - Archivo .sql con la base de datos<br/>
+3 - Repositorio Git a clonar (podéis poner los repositorios mini originales, pero perdereis Composer y sus paquetes)<br/>
 
