@@ -19,6 +19,12 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `mini`
 --
+/* Se elimina la base de datos si la hubiese */
+DROP DATABASE IF EXISTS myMini;
+/* Creacion de la base de datos */
+CREATE DATABASE myMini character set utf8 collate utf8_general_ci;
+/* Uso de la base de datos */
+USE myMini;
 
 -- --------------------------------------------------------
 
