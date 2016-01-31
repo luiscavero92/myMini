@@ -1,6 +1,6 @@
 # myMini
-Repositorios de mi máquina mini<br/>
-Instala una máquina vagrant con las características del proyecto original "panique/mini" y algunas modificaciones añadidas<br/>
+Repositorios de mi máquina mini<br/><br/>
+Instala una máquina vagrant con las características del proyecto original "panique/mini" y algunas modificaciones añadidas<br/><br/>
 La máqina viene totalmente preparada para trabajar sin necesidad de realizar ninguna operación adicional<br/>
 Incluye php 5.6, Composer y los paquetes: Plates, Dice, Kint y Phpmailer<br/>
 <br/>
