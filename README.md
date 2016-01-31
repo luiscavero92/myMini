@@ -24,7 +24,7 @@ Los archivos "Vagrantfile" y "Boostrap" están traducidos (en la medida de lo po
 fácilmente personalizables, algunas características importantes son:<br/>
 <br/>
 <b>Vagrantfile</b><br/>
-0 -  Box a utilizar(Por defecto: ubuntu/trusty64)<br/>
+0 -  Box a utilizar(Por defecto: ubuntu/trusty64) <i>Línea 10</i><br/>
 <br/>
 <b>Boostrap</b><br/>
 0 - Contraseña de la base de datos(Por defecto: 123) <i>Línea 6</i><br/>
