@@ -9,7 +9,7 @@ La máqina viene totalmente preparada para trabajar sin necesidad de realizar ni
 2 - Utiliza, por convención, la nomenclatura camealCase en los nombres del resto de archivos<br/>
 3 - El directorio "plates" ha sido suprimido ya que su funcionalidad era meramente educativa, las plantillas cuelgan directamente del directorio "view", aunque puede cambiarse desde core/Application.php <i>Línea:27</i><br/>
 4 - La clase View-Old también ha sido suprimida ya que únicamente incluía una clase obsoleta<br/>
-5 - Está adaptada hasta la última clase de MVC<br/>
+5 - Está adaptada hasta la última clase de MVC (incluyendo la inyección de dependencias que se realizó)<br/>
 <br/>
 <b>Para generar la máquina, seguir estos pasos:</b><br/>
 <i>Los pasos 0 y 3 son omitibles si ya tienes vagrant instalado y la box Trusty64 instalada, puedes consultar tus box instaladas con el comando "vagrant box list"</i><br/>
