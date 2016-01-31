@@ -20,10 +20,13 @@ class Application
         // create array with URL parts in $url
         $this->splitUrl();
 
+        //Sistema de Dependencias 
+        $dice = new \Dice\Dice; 
+
         // check for controller: no controller given ? then load start-page
         if (!$this->url_controller) {
             require APP . 'controller/home.php';
-            $page = new Home();
+            $page = $dice->create("Home");
             $page->index();
         } elseif (file_exists(APP . 'controller/' . $this->url_controller . '.php')) {
             // here we did check for controller: does such a controller exist ?
@@ -31,7 +34,7 @@ class Application
             // if so, then load this file and create this controller
             // example: if controller would be "car", then this line would translate into: $this->car = new car();
             require APP . 'controller/' . $this->url_controller . '.php';
-            $this->url_controller = new $this->url_controller();
+            $this->url_controller = $dice->create($this->url_controller); 
 
             // check for method: does such a method exist in the controller ?
             if (method_exists($this->url_controller, $this->url_action)) {
