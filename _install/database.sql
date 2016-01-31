@@ -123,11 +123,11 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 -- Volcado de datos para la tabla `usuario`
 --
-
+#Contraseñas 1234
 INSERT INTO `usuario` (`id_usuario`, `login`, `pass`, `nombre`, `id_perfil`, `marcador`, `token_recordarme`) VALUES
-(1, 'pepe@prueba.iescierva.net', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Pepe García', 1, 216781394851371, 'c4be99126436fa4661ce8130b124d115f1ce659b161099976b1dd9c8d6b1a805'),
-(2, 'isabel@prueba.iescierva.net', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Isabel Sánchez', 1, 379901394849217, ''),
-(3, 'juan@prueba.iescierva.net', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Juan Gómez', 2, 0, '');
+(1, 'pepe@prueba.iescierva.net', '81dc9bdb52d04dc20036dbd8313ed055', 'Pepe García', 1, 216781394851371, 'c4be99126436fa4661ce8130b124d115f1ce659b161099976b1dd9c8d6b1a805'),
+(2, 'isabel@prueba.iescierva.net', '81dc9bdb52d04dc20036dbd8313ed055', 'Isabel Sánchez', 1, 379901394849217, ''),
+(3, 'juan@prueba.iescierva.net', '81dc9bdb52d04dc20036dbd8313ed055', 'Juan Gómez', 2, 0, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

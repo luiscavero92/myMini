@@ -2,9 +2,9 @@
 
 class Privado extends Controller
 {
-    public function __construct()
+    public function __construct(View $view)
     {
-        parent::__construct();
+        parent::__construct($view);
         Auth::checkAutentication();
     }
 

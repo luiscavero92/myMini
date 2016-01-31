@@ -14,7 +14,13 @@ class Login extends Controller{
 
         if(LoginModel::dologin($_POST)){
 
-            echo $this->view->render('login/usuariologueado');
+            if($origen = Session::get('origen')){ 
+                Session::set('origen', null); 
+                header ('location:' . $origen); 
+                exit(); 
+            }else{
+                echo $this->view->render('login/usuarioLogeado');
+            }
 
         } else {
 

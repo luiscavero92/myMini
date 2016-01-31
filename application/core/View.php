@@ -2,9 +2,9 @@
 
 class View
 {
-    private static $templates;
+    private $templates;
 
-    public static function __construct(League\Plates\Engine $e)
+    public function __construct(League\Plates\Engine $e)
     {
         
         $this->templates = $e;

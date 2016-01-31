@@ -11,7 +11,7 @@ class Preguntas extends Controller
     public function crear()
     {
         if (!$_POST){
-            echo $this->view->render('preguntas/formulariopregunta');
+            echo $this->view->render('preguntas/formularioPregunta');
         } else {
             if (!isset($_POST["asunto"]))
                 $_POST["asunto"] = "";
@@ -22,9 +22,9 @@ class Preguntas extends Controller
                 'cuerpo' => $_POST["cuerpo"]
             );
             if (PreguntasModel::insert($datos)){
-                echo $this->view->render('preguntas/preguntainsertada');
+                echo $this->view->render('preguntas/preguntaInsertada');
             } else {
-                echo $this->view->render('preguntas/formulariopregunta',array(
+                echo $this->view->render('preguntas/formularioPregunta',array(
                         'errores' => array('Error al insertar'),
                         'datos' => $_POST
                 ));
@@ -37,7 +37,7 @@ class Preguntas extends Controller
         if (!$_POST){
             $pregunta = PreguntasModel::getId($id);
             if ($pregunta){
-                echo $this->view->render('preguntas/formulariopregunta', array(
+                echo $this->view->render('preguntas/formularioPregunta', array(
                         'datos' => get_object_vars($pregunta),
                         'accion' => 'editar',
                  ));
@@ -53,7 +53,7 @@ class Preguntas extends Controller
             if (PreguntasModel::edit($datos)){
                 header('location: /preguntas/todas');
             } else {
-                echo $this->view->render('preguntas/formulariopregunta', array(
+                echo $this->view->render('preguntas/formularioPregunta', array(
                     'errores' => array('Error al editar'),
                     'datos'   => $_POST,
                     'accion'  => 'editar'

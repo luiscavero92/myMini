@@ -4,9 +4,9 @@ class Controller
 {
     public $view = null;
 
-    function __construct()
+    function __construct(View $view)
     {
-        $this->view = TemplatesFactory::templates();
+        $this->view = $view;
         Session::init();
     }
 }

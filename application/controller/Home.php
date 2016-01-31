@@ -17,9 +17,8 @@ class Home extends Controller
     public function index()
     {
 
-        $this->view->addData(['titulo' => 'Portada']);
         echo $this->view->render("home/index", [
-            'titulo' => 'Estás en la portada'
+            'titulo' => 'Estás en la portadas'
         ]);
 
     }
