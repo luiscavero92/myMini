@@ -27,7 +27,7 @@ fácilmente personalizables, algunas características importantes son:<br/>
 0 -  Box a utilizar(Por defecto: ubuntu/trusty64)<br/>
 <br/>
 <b>Boostrap</b><br/>
-0 - Contraseña de la base de datos(Por defecto: 123)<br/>
-1 - Archivo .sql con la base de datos(Por defecto: database.sql)<br/>
-2 - Repositorio Git a clonar (podéis poner los repositorios mini originales, pero perdereis Composer y sus paquetes)<br/>
+0 - Contraseña de la base de datos(Por defecto: 123) <i>Línea 6</i><br/>
+1 - Nombre del archivo .sql con la base de datos(Por defecto: database.sql) <i>Línea 9</i><br/>
+2 - Repositorio Git a clonar (podéis poner los repositorios mini originales, pero perdereis Composer y sus paquetes, además de que los nombres de los archivos estarán en minúsculas pudiendo producir errores en Linux) <i>Línea 15</i><br/>
 
