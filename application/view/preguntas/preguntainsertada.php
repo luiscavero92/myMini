@@ -8,6 +8,6 @@
     Ahora practica con el ejemplo y contesta alguna de las preguntas que otros compañeros han formulado
     </p>
     <p>
-        <a href="/preguntas/todas">Volver</a>
+        <a href="/Preguntas/todas">Volver</a>
     </p>
 </div>

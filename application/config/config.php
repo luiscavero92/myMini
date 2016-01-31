@@ -54,5 +54,5 @@ define('DB_TYPE', 'mysql');
 define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'myMini');
 define('DB_USER', 'root');
-define('DB_PASS', 'your_password');
+define('DB_PASS', '123');
 define('DB_CHARSET', 'utf8');

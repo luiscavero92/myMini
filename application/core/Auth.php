@@ -9,7 +9,7 @@ class Auth
             Session::destroy();
             Session::init(); 
     		Session::set('origen', $_SERVER['REQUEST_URI']); 
-            header('location: /login');
+            header('location: /Login');
             exit();
         }
     }

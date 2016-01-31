@@ -42,7 +42,7 @@ class Preguntas extends Controller
                         'accion' => 'editar',
                  ));
             } else {
-                header("location: /preguntas/todas");
+                header("location: /Preguntas/todas");
             }
         } else {
             $datos = array(
@@ -51,7 +51,7 @@ class Preguntas extends Controller
                 'id_pregunta' => (isset($_POST["id_pregunta"])) ? $_POST["id_pregunta"] : ""
             );
             if (PreguntasModel::edit($datos)){
-                header('location: /preguntas/todas');
+                header('location: /Preguntas/todas');
             } else {
                 echo $this->view->render('preguntas/formularioPregunta', array(
                     'errores' => array('Error al editar'),

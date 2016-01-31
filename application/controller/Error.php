@@ -4,9 +4,9 @@ class Error extends Controller
 {
     private $msg;
 
-    public function __construct($msg = "")
+    public function __construct($msg = "",View $view)
     {
-        parent::__construct();
+        parent::__construct($view);
         $this->msg = $msg;
     }
 

@@ -2,7 +2,7 @@
 <div class="container">
     <h2>Login de Usuarios</h2>
     <?php $this->insert('partials/feedback') ?>
-    <form action="/login/dologin" method="post" class="login">
+    <form action="/Login/dologin" method="post" class="login">
         <section>
             <label>Email:</label>
             <input type="email" name="email">

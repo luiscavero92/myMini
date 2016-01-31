@@ -11,7 +11,7 @@
                 <h3><?= $pregunta->asunto ?></h3>
                 <p><?= $pregunta->cuerpo ?></p>
                 <footer>
-                    <a href="/preguntas/editar/<?= $pregunta->id_pregunta ?>">[ Editar ]</a>
+                    <a href="/Preguntas/editar/<?= $pregunta->id_pregunta ?>">[ Editar ]</a>
                 </footer>
             </article>
         <?php endforeach ?>
