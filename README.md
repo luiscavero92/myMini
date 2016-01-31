@@ -7,6 +7,7 @@ Algunas de las modificaciones sobre el proyecto mini original son:<br/>
 0 - Incluye php 5.6, Composer y los paquetes: Plates, Dice, Kint y Phpmailer<br/>
 1 - Utiliza la nomenclatura StudlyCaps en los nombres de los archivos de clases, evitando problemas de autoload en sistemas Linux<br/>
 2 - Utiliza, por convención, la nomenclatura camealCase en los nombres del resto de archivos<br/>
+3 - Está adaptada hasta la última clase de MVC
 <br/>
 Para generar la máquina, seguir estos pasos:<br/>
 0 - Instalar Vagrant<br/>
