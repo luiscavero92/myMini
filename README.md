@@ -15,7 +15,7 @@ Los archivos "Vagrantfile" y "Boostrap" están traducidos (en la medida de lo po
 fácilmente personalizables, algunas características importantes son:<br/>
 <br/>
 Vagrantfile<br/>
-  * Box a utilizar<br/>
+   Box a utilizar<br/>
 <br/>
 Boostrap<br/>
 - Contraseña de la base de datos<br/>
