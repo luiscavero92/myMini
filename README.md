@@ -3,6 +3,15 @@
 Instala una máquina vagrant con las características del proyecto original "panique/mini" y algunas modificaciones añadidas.<br/>
 La máqina viene totalmente preparada para trabajar sin necesidad de realizar ninguna operación adicional.<br/>
 
+<b>Para generar la máquina, seguir estos pasos:</b><br/>
+<i>Los pasos 0 y 3 son omitibles si ya tienes vagrant instalado y la box Trusty64 instalada, puedes consultar tus box instaladas con el comando "vagrant box list"</i><br/>
+0 - Instalar Vagrant<br/>
+1 - Descargar los archivos "Vagrantfile" y "Boostrap" que se encuentran en la carpeta _vagrant<br/>
+2 - Mover ambos archivos a la carpeta donde queréis crear la máquina<br/>
+3 - Instalar la box Trusty64 (o cambiar la box en el archivo Vagrantfile)<br/>
+4 - Ejecutar el comando "vagrant up" desde una consola situada en dicha carpeta<br/>
+<br/>
+
 <b>Algunas de las modificaciones sobre el proyecto mini original son:</b><br/>
 0 - Incluye php 5.6, Composer y los paquetes: Plates, Dice, Kint y Phpmailer<br/>
 1 - Utiliza la nomenclatura StudlyCaps en los nombres de los archivos de clases, evitando problemas de autoload en sistemas Linux<br/>
@@ -11,15 +20,7 @@ La máqina viene totalmente preparada para trabajar sin necesidad de realizar ni
 4 - Cualquier archivo desactualizado u obsoleto, cuya única razón de existencia era conservar los archivos que se han ido realizando en vez de reemplazarlos por los nuevos (<i>ejemplos: view-old.php, canciones.php</i>) ha sido removido, con el fin de partir de una aplicación limpia.<br/>
 5 - Está adaptada hasta la última clase de MVC (incluyendo la inyección de dependencias que se realizó)<br/>
 <br/>
-<b>Para generar la máquina, seguir estos pasos:</b><br/>
-<i>Los pasos 0 y 3 son omitibles si ya tienes vagrant instalado y la box Trusty64 instalada, puedes consultar tus box instaladas con el comando "vagrant box list"</i><br/>
-0 - Instalar Vagrant<br/>
-1 - Descargar los archivos "Vagrantfile" y "Boostrap" que se encuentran en la carpeta _vagrant<br/>
-2 - Mover ambos archivos a la carpeta donde queréis crear la máquina<br/>
-3 - Instalar la box Trusty64 (o cambiar la box en el archivo Vagrantfile)<br/>
-4 - Ejecutar el comando "vagrant up" desde una consola situada en dicha carpeta<br/>
 
-<br/>
 Los archivos "Vagrantfile" y "Boostrap" están traducidos (en la medida de lo posible) para que puedan ser<br/>
 fácilmente personalizables, algunas características importantes son:<br/>
 <br/>
