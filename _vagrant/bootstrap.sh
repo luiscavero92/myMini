@@ -23,6 +23,12 @@ echo -e "\n\n ===== Instalando Apache2: =====\n\n"
 sudo apt-get install -y apache2
 
 # Actualización e instalación de php 5.6
+sudo apt-get install -y python-software-properties
+sudo add-apt-repository -y ppa:ondrej/php5-5.6
+sudo apt-get update
+sudo apt-get install -y php5
+
+# Actualización e instalación de php 5.6
 echo -e "\n\n ===== Instalando php5: =====\n\n" 
 sudo apt-get install -y python-software-properties
 sudo add-apt-repository -y ppa:ondrej/php5-5.6
