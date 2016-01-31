@@ -36,7 +36,7 @@ echo -e "\n\n=========================\n\n"
 echo -e "\n\n===== Instalando mysql: =====\n\n" 
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD"
-sudo apt-get -y install mysql-server
+sudo apt-get install -y mysql-server
 sudo apt-get install -y php5-mysql
 
 # Instalación de phpmyadmin
