@@ -105,4 +105,4 @@ sudo mysql -h "localhost" -u "root" "-p${PASSWORD}" < "/var/www/html/${PROJECTFO
 sudo sed -i "s/your_password/${PASSWORD}/" "/var/www/html/${PROJECTFOLDER}/application/config/config.php"
 
 # Mensaje final
-echo -e "\n\n===== Voilá =====\n\n" 
+echo -e "\n\n===== Voila =====\n\n" 
