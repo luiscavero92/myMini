@@ -19,28 +19,28 @@ GIT_REPOS='https://github.com/luiscavero92/myMini'
 sudo apt-get update
 sudo apt-get -y upgrade
 # Instalación de apache2 (-y para no pedir confirmación)
-echo -e "\n ===== Instalando Apache2: =====\n" 
+echo -e "\n\n ===== Instalando Apache2: =====\n\n" 
 sudo apt-get install -y apache2
 
 # Actualización e instalación de php 5.6
-echo -e "\n ===== Instalando php5: =====\n" 
+echo -e "\n\n ===== Instalando php5: =====\n\n" 
 sudo apt-get install -y python-software-properties
 sudo add-apt-repository -y ppa:ondrej/php5-5.6
 sudo apt-get update
 sudo apt-get install -y php5
-echo -e "\n===== Version de php: =====\n" 
+echo -e "\n\n===== Version de php: =====\n\n" 
 php5 -v
-echo -e "\n=========================\n"
+echo -e "\n\n=========================\n\n"
 
 # Instalación de mysql
-echo -e "\n===== Instalando mysql: =====\n" 
+echo -e "\n\n===== Instalando mysql: =====\n\n" 
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD"
 sudo apt-get -y install mysql-server
 sudo apt-get install -y php5-mysql
 
 # Instalación de phpmyadmin
-echo -e "\n===== Instalando phpmyadmin: =====\n" 
+echo -e "\n\n===== Instalando phpmyadmin: =====\n\n" 
 sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/dbconfig-install boolean true"
 sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/app-password-confirm password $PASSWORD"
 sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/admin-pass password $PASSWORD"
@@ -74,29 +74,29 @@ service apache2 restart
 sudo rm "/var/www/html/index.html"
 
 # Instala git
-echo -e "\n===== Instalando Git: =====\n" 
+echo -e "\n\n===== Instalando Git: =====\n\n" 
 sudo apt-get install -y git
 
 # Descarga mis repositorios de git en el directorio del proyecto
-echo -e "\n===== Clonando repositorios Git: =====\n" 
+echo -e "\n\n===== Clonando repositorios Git: =====\n\n" 
 sudo git clone "${GIT_REPOS}" "/var/www/html/${PROJECTFOLDER}"
 
 # Instalación de composer
-echo -e "\n===== Instalando Composer: =====\n" 
+echo -e "\n\n===== Instalando Composer: =====\n\n" 
 curl -s https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
 # Instalación de los paquetes incluidos en composer
-echo -e "\n===== Instalando paquetes de Composer: =====\n" 
+echo -e "\n\n===== Instalando paquetes de Composer: =====\n\n" 
 cd "/var/www/html/${PROJECTFOLDER}"
 composer install
 
 # Carga la base de datos a partir del archivo database.sql
-echo -e "\n===== Cargando la base de datos: =====\n" 
+echo -e "\n\n===== Cargando la base de datos: =====\n\n" 
 sudo mysql -h "localhost" -u "root" "-p${PASSWORD}" < "/var/www/html/${PROJECTFOLDER}/_install/${DATABASE_SQL}"
 
 # Copia la contraseña de la base de datos en el archivo de configuración -> define('DB_PASS', 'your_password');
 sudo sed -i "s/your_password/${PASSWORD}/" "/var/www/html/${PROJECTFOLDER}/application/config/config.php"
 
 # Mensaje final
-echo -e "\n===== Voilá =====\n" 
+echo -e "\n\n===== Voilá =====\n\n" 

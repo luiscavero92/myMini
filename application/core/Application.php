@@ -23,6 +23,10 @@ class Application
         //Sistema de Dependencias 
         $dice = new \Dice\Dice; 
 
+        //Reglas del constructor, directorio de plantillas y singleton
+        $rule = ['constructParams' => ['directory' => APP . 'view'], 'shared' => true];
+        $dice->addRule('League\Plates\Engine', $rule);
+
         // check for controller: no controller given ? then load start-page
         if (!$this->url_controller) {
             require APP . 'controller/home.php';
