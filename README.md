@@ -12,11 +12,13 @@ Algunas de las modificaciones sobre el proyecto mini original son:<br/>
 5 - Está adaptada hasta la última clase de MVC<br/>
 <br/>
 Para generar la máquina, seguir estos pasos:<br/>
+(Los pasos 0 y 3 son omitibles si ya tienes vagrant instalado y la box Trusty64 instalada, puedes consultar tus box instaladas con el comando "vagrant box list")<br/>
 0 - Instalar Vagrant<br/>
 1 - Descargar los archivos "Vagrantfile" y "Boostrap" que se encuentran en la carpeta _vagrant<br/>
 2 - Mover ambos archivos a la carpeta donde queréis crear la máquina<br/>
 3 - Instalar la box Trusty64 (o cambiar la box en el archivo Vagrantfile)<br/>
 4 - Ejecutar el comando "vagrant up" desde una consola situada en dicha carpeta<br/>
+
 <br/>
 Los archivos "Vagrantfile" y "Boostrap" están traducidos (en la medida de lo posible) para que puedan ser<br/>
 fácilmente personalizables, algunas características importantes son:<br/>
