@@ -14,10 +14,10 @@ Para generar la máquina, seguir estos pasos:<br/>
 Los archivos "Vagrantfile" y "Boostrap" están traducidos (en la medida de lo posible) para que puedan ser<br/>
 fácilmente personalizables, algunas características importantes son:<br/>
 <br/>
--- Vagrantfile --<br/>
+Vagrantfile<br/>
 - Box a utilizar<br/>
 <br/>
--- Boostrap --<br/>
+Boostrap<br/>
 - Contraseña de la base de datos<br/>
 - Archivo .sql con la base de datos<br/>
 - Repositorio Git a clonar (podéis poner los repositorios mini originales, pero perdereis Composer y sus paquetes)<br/>
