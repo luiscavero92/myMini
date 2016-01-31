@@ -1,9 +1,9 @@
 # myMini
-Repositorios de mi máquina mini<br/><br/>
+<b>Repositorios de mi máquina mini</b><br/><br/>
 Instala una máquina vagrant con las características del proyecto original "panique/mini" y algunas modificaciones añadidas.<br/><br/>
 La máqina viene totalmente preparada para trabajar sin necesidad de realizar ninguna operación adicional.<br/>
 
-Algunas de las modificaciones sobre el proyecto mini original son:<br/>
+<b>Algunas de las modificaciones sobre el proyecto mini original son:</b><br/>
 0 - Incluye php 5.6, Composer y los paquetes: Plates, Dice, Kint y Phpmailer<br/>
 1 - Utiliza la nomenclatura StudlyCaps en los nombres de los archivos de clases, evitando problemas de autoload en sistemas Linux<br/>
 2 - Utiliza, por convención, la nomenclatura camealCase en los nombres del resto de archivos<br/>
@@ -23,10 +23,10 @@ Algunas de las modificaciones sobre el proyecto mini original son:<br/>
 Los archivos "Vagrantfile" y "Boostrap" están traducidos (en la medida de lo posible) para que puedan ser<br/>
 fácilmente personalizables, algunas características importantes son:<br/>
 <br/>
-Vagrantfile<br/>
+<b>Vagrantfile</b><br/>
 0 -  Box a utilizar(Por defecto: ubuntu/trusty64)<br/>
 <br/>
-Boostrap<br/>
+<b>Boostrap</b><br/>
 0 - Contraseña de la base de datos(Por defecto: 123)<br/>
 1 - Archivo .sql con la base de datos(Por defecto: database.sql)<br/>
 2 - Repositorio Git a clonar (podéis poner los repositorios mini originales, pero perdereis Composer y sus paquetes)<br/>
