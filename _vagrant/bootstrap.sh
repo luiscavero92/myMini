@@ -22,6 +22,12 @@ sudo apt-get -y upgrade
 echo -e "\n\n ===== Instalando Apache2: =====\n\n" 
 sudo apt-get install -y apache2
 
+# Se establece el ServerName de apache2 (evita warnings constantes)
+echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/servername.conf
+sudo a2enconf servername
+# Se reinicia apache2
+sudo service apache2 reload
+
 # Actualización e instalación de php 5.6
 echo -e "\n\n ===== Instalando php5: =====\n\n" 
 sudo apt-get install -y python-software-properties
