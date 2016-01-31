@@ -1,6 +1,6 @@
 # myMini
 <b>Repositorios de mi máquina mini</b><br/>
-Instala una máquina vagrant con las características del proyecto original "panique/mini" y algunas modificaciones añadidas.<br/><br/>
+Instala una máquina vagrant con las características del proyecto original "panique/mini" y algunas modificaciones añadidas.<br/>
 La máqina viene totalmente preparada para trabajar sin necesidad de realizar ninguna operación adicional.<br/>
 
 <b>Algunas de las modificaciones sobre el proyecto mini original son:</b><br/>
