@@ -29,7 +29,7 @@ class Application
 
         // check for controller: no controller given ? then load start-page
         if (!$this->url_controller) {
-            require APP . 'controller/home.php';
+            require APP . 'controller/Home.php';
             $page = $dice->create("Home");
             $page->index();
         } elseif (file_exists(APP . 'controller/' . $this->url_controller . '.php')) {
@@ -56,14 +56,14 @@ class Application
                 }
                 else {
                     header('HTTP/1.0 404 Not Found');
-                    require APP . 'controller/error.php';
+                    require APP . 'controller/Error.php';
                     $cont_error = new Error("Esa acción no existe");
                     $cont_error->index();
                 }
             }
         } else {
             header('HTTP/1.0 404 Not Found');
-            require APP . 'controller/error.php';
+            require APP . 'controller/Error.php';
             $cont_error = new Error("Ese controlador no existe");
             $cont_error->index();
         }
