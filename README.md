@@ -8,7 +8,7 @@ La máqina viene totalmente preparada para trabajar sin necesidad de realizar ni
 1 - Utiliza la nomenclatura StudlyCaps en los nombres de los archivos de clases, evitando problemas de autoload en sistemas Linux<br/>
 2 - Utiliza, por convención, la nomenclatura camealCase en los nombres del resto de archivos<br/>
 3 - El directorio "plates" ha sido suprimido ya que su funcionalidad era meramente educativa, las plantillas cuelgan directamente del directorio "view", aunque puede cambiarse desde core/Application.php <i>Línea:27</i><br/>
-4 - La clase View-Old también ha sido suprimida ya que únicamente incluía una clase obsoleta<br/>
+4 - Cualquier archivo desactualizado u obsoleto, cuya única razón de existencia era conservar los archivos que se han ido realizando en vez de reemplazarlos por los nuevos (<i>ejemplos: view-old.php, canciones.php</i>) ha sido removido, con el fin de partir de una aplicación limpia.<br/>
 5 - Está adaptada hasta la última clase de MVC (incluyendo la inyección de dependencias que se realizó)<br/>
 <br/>
 <b>Para generar la máquina, seguir estos pasos:</b><br/>
