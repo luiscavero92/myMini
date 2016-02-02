@@ -19,7 +19,7 @@ class Login extends Controller{
                 header ('location:' . $origen); 
                 exit(); 
             }else{
-                echo $this->view->render('login/usuarioLogeado');
+                echo $this->view->render('login/usuarioLogueado');
             }
 
         } else {
